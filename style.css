@@ -259,21 +259,20 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-}
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.about-container p {
+  padding: 0.85rem 0;
+  /* font-size: 0.87rem; */
+  line-height: 1.7rem;
 }
 
 .about-pic {
   border-radius: 2rem;
+  width: 700px;
 }
 
 .arrow {
@@ -285,8 +284,7 @@ section {
 .details-container {
   padding: 1.5rem;
   /* flex: 1; */
-  border-radius: 2rem;
-  background-color: rgba(53, 53, 53, 0.301);
+
   /* border-color: rgb(163, 163, 163); */
 }
 
@@ -313,10 +311,6 @@ section {
 
 /*  ------------------ Experince SECTION ----------------- */
 
-.experience-container {
-  /* border-color: rgb(163, 163, 163);
-  background-color: rgb(250, 250, 250); */
-}
 .experience-info {
   padding: 1.5rem;
   margin: 1rem 0;
@@ -340,12 +334,19 @@ section {
 
 #projects {
   position: relative;
-  margin: 0 20rem;
+}
+.porject-undeline {
+  border-bottom: solid rgb(85, 85, 85);
+}
+.project-containers {
+  display: flex;
+  flex-direction: column;
 }
 
 .project-container {
   display: flex;
   flex-direction: row;
+  margin: 1rem;
 }
 
 .experience-details-container {
@@ -356,32 +357,38 @@ section {
 .color-container {
   border-color: rgb(163, 163, 163);
   background-color: rgb(250, 250, 250);
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
 .project-img {
   border-radius: 2rem;
-  height: 300px;
-  width: 300px;
+  /* height: 300px; */
+  width: 500px;
 }
 
-.project-title {
-  /* margin: 1rem; */
-  /* text-align: center; */
-  color: black;
+.project-title-main h3 {
+  font-weight: 400;
+}
+.project-title-main {
+  padding: 1rem 0;
 }
 
 .project-description {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* justify-content: center; */
-
   margin: 1rem;
+}
+
+.project-description p {
+  padding: 0.5rem 0;
 }
 
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  margin: 1rem 0;
 }
 
 /* CONTACT SECTION */
