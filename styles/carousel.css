@@ -1,14 +1,27 @@
+#carousel-container {
+  display: flex;
+  margin-top: 2rem;
+}
+.carosuel-container-description {
+  width: 50%;
+}
+
 .carousel {
   position: relative;
   height: 300px;
-  width: 80%;
+  width: 500px;
   margin: 0 auto;
+}
+
+.carosuel-container-description h3 {
+  padding-top: 0;
 }
 
 .carousel__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 2rem;
 }
 
 .carousel__track-container {
@@ -44,7 +57,7 @@
 }
 
 .carousel__button--left {
-  left: -40px;
+  left: -10px;
 }
 .carousel__button--right {
   right: -40px;
@@ -58,7 +71,7 @@
   /* background-color: purple; */
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 35px 0;
 }
 
 .carousel__indicator {

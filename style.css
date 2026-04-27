@@ -16,6 +16,11 @@ html {
 
 p {
   color: rgb(85, 85, 85);
+  line-height: 1.7rem;
+}
+.disclamer {
+  font-size: 0.75rem;
+  line-height: normal;
 }
 
 /* TRANSITION */
@@ -360,6 +365,13 @@ section {
   flex-direction: column;
 }
 .color-container {
+  border-color: rgb(163, 163, 163);
+  background-color: rgb(250, 250, 250);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.color-container-carousel {
   border-color: rgb(163, 163, 163);
   background-color: rgb(250, 250, 250);
   padding: 1rem;
