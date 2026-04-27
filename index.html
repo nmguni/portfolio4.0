@@ -6,14 +6,15 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Ndumiso Portfolio</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="./styles/carousel.css">
    <link rel="stylesheet" href="mediaqueries.css">
 
    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
    <link rel="icon" type="image/svg+xml" href="./assets/favicon.png" />
-   <link rel="shortcut icon" href="/favicon.ico" />
+   <!-- <link rel="shortcut icon" href="/favicon.ico" />
    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-   <link rel="manifest" href="/site.webmanifest" />
+   <link rel="manifest" href="/site.webmanifest" /> -->
 </head>
 
 <body>
@@ -65,7 +66,7 @@
 
          <div id="socials-container">
             <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
-               onclick="location.href='https://www.linkedin.com/in/ndumiso-mguni/'">
+               onclick=" location.href='https://www.linkedin.com/in/ndumiso-mguni/'  ">
 
 
             <img src="./assets/github.png" alt="My Github Profile" class="icon"
@@ -87,7 +88,7 @@
             </div>
             <div class="about-container">
                <p>Outside of work, I spend a lot of time in the gym, mainly focused on powerlifting and strength
-                  training. I also enjoy cooking—especially hosting dinner parties or BBQs with friends in the summer.
+                  training. I also enjoy cooking, especially hosting dinner parties or BBQs with friends in the summer.
                   Traveling is another big interest of mine, particularly getting to experience different cultures and
                   try new food.
 
@@ -116,7 +117,7 @@
          <div class="experience-container">
             <div class="experience-info">
                <div class="experience__details  experience__details-top">
-                  <p><b> Chairman-Mlls</b> | Frontend Web Developer</p>
+                  <h3><b> Chairman-Mlls</b> | Frontend Web Developer</h3>
                   <p><b>3 years</b></p>
                </div>
                <div class="experience__details">
@@ -138,7 +139,7 @@
             <div class="experience-container">
                <div class="experience-info">
                   <div class="experience__details  experience__details-top">
-                     <p><b>Klick Health</b> | Web Developer</p>
+                     <h3><b>Klick Health</b> | Web Developer</h3>
                      <p><b>2 years</b></p>
                   </div>
                   <div class="experience__details">
@@ -159,7 +160,7 @@
                <div class="experience-container">
                   <div class="experience-info">
                      <div class="experience__details  experience__details-top">
-                        <p><b> Ontario SEO</b> | Web Developer</p>
+                        <h3><b> Ontario SEO</b> | Web Developer</h3>
                         <p><b>2 years</b></p>
                      </div>
                      <div class="experience__details">
@@ -189,6 +190,35 @@
 
             <!-- CHAIRMANM ILLS -->
 
+            <div class="carousel">
+               <button class="carousel__button carousel__button--left is-hidden">
+                  <img src="./assets//icons/left-arrows.svg" alt="left arrow icon">
+               </button>
+               <div class="carousel__track-container">
+                  <ul class="carousel__track">
+                     <li class="carousel__slide current-slide"><img class="carousel__image"
+                           src="./assets/carousel-images/chairmanmills-slide1.jpg" alt="chairman-mills slide 1">
+                     </li>
+                     <li class="carousel__slide"><img class="carousel__image"
+                           src="./assets/carousel-images/chairmanmills-slide2.jpg" alt="chairman-mills slide 1">
+                     </li>
+                     <li class="carousel__slide"><img class="carousel__image"
+                           src="./assets/carousel-images/chairmanmills-slide3.jpg" alt="chairman-mills slide 1">
+                     </li>
+
+                  </ul>
+               </div>
+               <button class="carousel__button carousel__button--right"> <img src="./assets//icons/right-arrow.svg"
+                     alt="right arrow icon"></button>
+
+               <div class="carousel__nav">
+                  <button class="carousel__indicator current-slide"></button><button
+                     class="carousel__indicator"></button><button class="carousel__indicator"></button>
+               </div>
+            </div>
+
+            <!-- carousel bottom -->
+
 
             <div class="project-container ">
                <div class="details-container ">
@@ -199,7 +229,7 @@
 
                <div class="project-description">
                   <div class="project-title-main">
-                     <h3>Klick Health | <b>Rinvoq HCP Project</b></h3>
+                     <h3> Element Event Solutions (Chairman Mills) </h3>
                   </div>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic explicabo accusantium placeat
                      dolorum reprehenderit cupiditate quas suscipit ipsam atque repellat inventore impedit laborum
@@ -371,6 +401,7 @@
 
 
    <script src=" script.js"></script>
+   <script src="./scripts/carousel.js"></script>
 </body>
 
 </html>

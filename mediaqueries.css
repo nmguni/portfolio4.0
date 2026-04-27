@@ -46,6 +46,14 @@
     margin: 0 auto 2rem;
   }
 
+  .project-container {
+    flex-direction: column;
+  }
+  .project-container .project-description {
+    justify-content: center;
+    align-items: center;
+  }
+
   .about-containers {
     margin-top: 0;
   }
